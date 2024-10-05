@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Phoenix Synergize Official</title> 
+  <style>
+    header {
+      display: flex; /* Align items horizontally */
+      align-items: center; /* Center items vertically */
+      justify-content: center; /* Center items horizontally */
+      padding: 0px;
+      background-color: #f4f4f4; /* Light grey background */
+    }
+
+    img {
+      max-width: 100%; /* Responsive image */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style> 
+ <style type="text/css" id="dcoder_stylesheet">* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Set full height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.discordapp.com/attachments/1291727878895173642/1292031129792151593/20241002_211535.jpg?ex=67024142&is=6700efc2&hm=976d0a40803882715bb43110daf83c19258723a44d3a0f11e754e23ea0ae3681&') no-repeat center center fixed; /* Use your background image here */
+    background-size: cover auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.content-wrapper {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Add padding around content */
+}
+
+.about-us, .join-discord, .dropdown-container {
+    margin: 20px auto; /* Center align */
+    padding: -25px; /* Corrected padding */
+    max-width: 600px; /* Limit the width */
+      }
+
+/* New margin for vertical spacing */
+.about-us {
+    margin-bottom: 40px; /* Space below About Us */
+}
+
+.join-discord {
+    margin-bottom: 40px; /* Space below Join Discord */
+}
+
+h2 {
+    text-align: center;
+}
+
+.about-text, .discord-text {
+    text-align: center; /* Center text */
+    font-weight: bold;
+}
+
+.dropdown-container {
+    width: 100%; /* Full width for dropdowns */
+}
+
+.dropdown-btn {
+    width: 100%;
+    background-color: transparent; /* Make the button background transparent */
+    color: white;
+    padding: 15px;
+    border: 1px solid white; /* White border */
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px; /* Rounded corners */
+    font-weight: bold;
+    transition: transform 0.5s; /* Transition for scaling effect */
+}
+
+.dropdown-content, .vision-content {
+    display: none; /* Initially hidden */
+    background-color: rgba(255, 140, 0, 0.5); /* Semi-transparent background for dropdown */
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid white; /* White border */
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(-20px); /* Start from above */
+    transition: opacity 0.10s ease, transform 0.10s ease; /* Smooth opacity and transform transition */
+font-weight: bold;
+}
+
+.dropdown-content.show, .vision-content.show {
+    display: block; /* Make visible when toggled */
+    opacity: 1; /* Final opacity */
+      background-color: transparent;
+      text-align: center;
+    transform: translateY(0); /* Move to original position */
+}
+
+.vision-btn {
+    background-color: transparent; /* Make the button background transparent */
+    color: white;
+    padding: 10px;
+    border: 1px solid white; /* White border */
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.5s; /* Transition for scaling effect */
+}
+
+.vision-btn:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+.discord-btn {
+    background-color: #7289da; /* Discord color */
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Let the button width adjust to content */
+    margin-top: 10px;
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+    font-weight: bold;
+    transition: transform 0.10s; /* Transition for scaling effect */
+}
+
+.discord-btn:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+.discord-btn i {
+    margin-right: 8px; /* Spacing for Discord icon */
+}
+
+/* Footer Style */
+footer {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}</style></head> 
+ <body> 
+  <header> 
+   <img src="https://cdn.discordapp.com/attachments/1291727878895173642/1292031130026901504/20241002_182828.jpg?ex=67024142&amp;is=6700efc2&amp;hm=8f69d75f3ad6f4147b94dba668a0e172588bae100bc5a815c4f13ee5384176f1&amp;"> <!-- Replace with your image URL --> 
+  </header> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Your Clan Website</title> 
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Full Page Background Image --> 
+  <div class="background-container"></div> <!-- Main Content Wrapper --> 
+  <div class="content-wrapper"> <!-- About Us Section --> 
+   <section class="about-us"> 
+    <h2 style="color: red;">Welcome To Phoenix Synergize</h2> 
+    <h3 class="about-text">We are a competitive, organized, and team-oriented Clash of Clans clan.</h3> 
+<h3 class="about-text">Our mission is to foster a supportive environment where every member can thrive, contribute, and achieve greatness together.</h3>
+   </section> <!-- Clan Info Dropdown --> 
+   <div class="dropdown-container"> <button class="dropdown-btn">Clan Info</button> 
+    <div class="dropdown-content"> 
+     <div id="clan-data"> <!-- Clan data will be inserted here --> 
+     </div> 
+    </div> 
+   </div> <!-- Clan Rules Dropdown --> 
+   <div class="dropdown-container"> <button class="dropdown-btn">Clan Rules</button> 
+    <div class="dropdown-content"> <button class="vision-btn">Basic Rules</button> 
+     <div class="vision-content"> 
+      <ul> 
+       <p>1. Treat all members with respect. No bullying, harassment, or abusive language.</p> 
+       <p>2. More than 3 days of inactivity will be result in a kick without any warning.</p> 
+      <p>3. Donate requested troops promptly. Maintain a healthy donation ratio.</p>
+      <p>4. Participate in clan games. Complete raid attack every week, Contribute gold to Prioritize tagged buildings.</p>
+      <p>5. Members should not hop between clans. Loyalty is valued and expected.</p>
+      <p>6. If you leave the clan without inform, will not be allowed to rejoin.</p>
+      <p>7. If you plan to be inactive for an extended period Inform Co-leaders.</p>
+      <p>8. If you get kicked out for inactive, you can rejoin the clan once you're active again.</p>
+      <p>9. Repeatedly or frequently violating the rules will result in a ban from clan.</p>
+      </ul> 
+     </div> <button class="vision-btn">War Rules</button> 
+     <div class="vision-content"> 
+      <ul> 
+       <p>1. War Sign-up is mandatory for every war to participate in clan wars.</p> 
+      <p>2. Do not sign-up for war if you are upgrading more than 1 heros.</p>
+      <p>3. If you missed 1 attack will be warned, missing both attack will be result in a kick.</p>
+      <p>4. Claim bases attack must be complete within 12 hrs. after 12 hrs claim will not valid.</p>
+      <p>5. If all bases are 3-starred, you can use your attack on any base to get loot.</p>
+      <p>6. All heros must be available. If you're participating in CWL.</p>
+      <p>7. Attack on mirror in CWL, missed attack in CWL will be result in a kick.</p>
+      <p>8. Do not attack on others mirror without inform co-leaders.</p>
+      <p>9. We expect at least 2 stars from everyone in CWL, whether you're attacking within your Town Hall level or hitting a higher one.</p>
+      </ul> 
+     </div> 
+    </div> 
+   </div> <!-- Join Discord Section --> 
+   <section class="join-discord"> 
+    <h2>Join Our Discord</h2> 
+    <p class="discord-text"> Join our Discord Server to stay connected with community and To be part of our family. </p> <button class="discord-btn" onclick="window.location.href='https://discord.com/invite/srjAGrFXKR'"> <i class="fab fa-discord"></i> Join Discord </button> 
+   </section> 
+  </div> <!-- Footer --> 
+  <footer> 
+   <p>© 2024 Phoenix Synergize. All rights reserved</p> 
+      <p>Designed by <a href="https://discord.com/users/610708992540278814" target="_blank" style="color: white;">Developer Jk</a></p> 
+
+  </footer> <!-- JavaScript for Dropdowns and API Fetch --> 
+  <script>
+        // Fetch clan data from Clash of Clans API
+        const fetchClanData = async () => {
+            const apiKey = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImZlNTE3ZGQ0LWQ0MmQtNDQ3NC1iZTVkLTY4NzZjNTg3ZmNmMyIsImlhdCI6MTcyODA0MzYxMSwic3ViIjoiZGV2ZWxvcGVyL2NjZjA4YWViLWJlYTYtZTRmYy05ZmZjLTllMTk3ZWY3ZWM1NCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjQ1Ljc5LjIxOC43OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.NDlHYl1k12jI552L0N9Ioa3cSZNg7qc6F5K4QzCMT25sP4iCYRmSCiexGY1QcDWbR6LE2OqxVo7F2YAoBSVahQ'; // Replace with your API key
+            const clanTag = '#URQRGU9J'; // Replace with your clan tag (e.g., '#123456')
+            const url = `https://cocproxy.royaleapi.dev/v1/clans/${encodeURIComponent(clanTag)}`;
+
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`
+                    }
+                });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                displayClanData(data);
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+                document.getElementById('clan-data').innerHTML = `<p>Error fetching clan data: ${error.message}</p>`;
+            }
+        };
+
+        const displayClanData = (data) => {
+            const clanDataContainer = document.getElementById('clan-data');
+            clanDataContainer.innerHTML = `
+     <h3 style="color: white;">BOSS OF COC <a href="https://link.clashofclans.com/en/?action=OpenClanProfile&amp;tag=URQRGU9J" target="_blank" style="color: white;">(#URQRGU9J)</a></h3> 
+                <p>🌎 Location: ${data.location.name}</p>
+                <p>🚀 Level: ${data.clanLevel} 👥️ Members: ${data.members}/50</p>
+                <p>🏅 War Won: ${data.warWins} ❌️ War Lost: ${data.warLosses}</p>
+                <p>🪖 War Win Streak: ${data.warWinStreak}</p>
+                <p>🏆 War League: ${data.warLeague.name}</p>
+                <p>🏠 Required Townhall: ${data.requiredTownhallLevel}</p>
+                <p>⏳️ Clan Type: Competitive</p>
+                
+             `;
+        };
+
+        // Initialize fetching of clan data
+        fetchClanData();
+
+        // Toggle dropdown for Clan Info and Clan Rules
+        const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+        dropdownButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+
+        // Toggle visibility of War and Basic Rules under Clan Rules
+        const visionButtons = document.querySelectorAll('.vision-btn');
+        visionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+    </script> 
+ 
+</body></html>
